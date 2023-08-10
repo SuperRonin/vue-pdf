@@ -1,13 +1,30 @@
-# vue-pdf
-vue.js pdf viewer is a package for Vue that enables you to display and view PDF's easily via vue components.
+# vue-pdf-micro
+This package is vue-pdf@4.3.0.
+ The fork version of fixed cross domain issues that occurred in micro app micro front-end applications.
+
+# other settings
+webpack
+```
+config.module
+      .rule('worker')
+      .test(/\.worker\.js$/)
+      .use('worker-loader')
+      .loader('worker-loader')
+      .options({
+        inline: true,
+        fallback: false,
+      })
+      .end()
+
+```
 
 ## Install via NPM/Yarn
 ```bash
-npm install vue-pdf
+npm install vue-pdf-micro
 ```
 
 ```bash
-yarn add vue-pdf
+yarn add vue-pdf-micro
 ```
 
 ## Example - basic
@@ -17,7 +34,7 @@ yarn add vue-pdf
 </template>
 
 <script>
-import pdf from 'vue-pdf'
+import pdf from 'vue-pdf-micro'
 
 export default {
   components: {
